@@ -3907,3 +3907,21 @@ input, select, textarea {
 			}
 
 		}
+
+/*user defined styles*/
+
+/* Flexbox for aligning the heading and button */
+.heading-container {
+    display: inline-flex; /* Inline layout to keep it compact */
+    align-items: center; /* Align button with text vertically */
+    gap: 10px; /* Optional: Adds space between the heading and button */
+}
+
+.heading-container h2 {
+    margin: 0; /* Remove extra space around the heading */
+}
+
+.heading-container button {
+    cursor: pointer; /* Show a pointer on hover */
+    padding: 5px 10px; /* Adjust button padding */
+}
