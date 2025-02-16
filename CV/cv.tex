@@ -1,0 +1,117 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{20pt} % Added padding to space up the name
+    \begin{center}
+        {\Huge \textbf{#1}}\\
+        \vspace{5pt} % Added padding below the name
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+%==== Profile ====%
+\vspace*{-10pt}
+\contact{Aaromal A}{Kochi, India}{aaromalonline@gmail.com $\cdot$ https://aaromalonline.github.io}
+
+%==== Education ====%
+\header{Education}
+\textbf{Cochin University of Science & Technology (CUSAT)}\hfill Kochi, Kerala\\
+Btech Electronics \& Communication \hfill Sep 2024 - Jun 2028\\
+\vspace{2mm}
+
+%==== Experience ====%
+\header{Experience}
+\vspace{1mm}
+
+\textbf{Web Developer} \hfill Remote\\
+\textit{Freelance} \hfill Jun 2021 - Present\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Developed and maintained multiple websites for clients, utilizing HTML, CSS, JavaScript, and backend technologies.
+    \item Designed user-friendly interfaces and implemented responsive web design principles.
+    \item Managed deployments, optimized performance, and ensured website security.
+\end{itemize}
+
+\header{Expertise}
+\begin{tabular}{ l l }
+    Programming Languages: & Python, C/C++, JavaScript, Bash, SQL\\
+    Database Management: & MySQL, SQLite3\\
+    Web Development: & HTML, CSS, JavaScript\\
+    Version Control: & Git, GitHub\\
+    Operating Systems: & Linux, Windows\\
+    Other Tools: & CAD, Arduino, ESP32, ROS 2 Humble\\
+\end{tabular}
+\vspace{2mm}
+
+\header{Projects}
+{\textbf{Line Following Robot}} {\sl ESP32, Arduino IDE, C++} \\
+Designed and programmed an autonomous robot using IR sensors and motor control algorithms.\\
+\vspace*{2mm}
+{\textbf{PassCrypt - A Password Manager}} {\sl Python3, SQLite3} \hfill https://github.com/aaromalonline/PassCrypt\\
+Secure and efficient password manager using encryption techniques, functional programming, and database management.\\
+\vspace*{2mm}
+{\textbf{Personal Portfolio Website}} {\sl HTML, CSS, JS, Bootstrap, SASS} \hfill https://github.com/aaromalonline/aaromalonline.github.io\\
+Developed a personal portfolio website showcasing projects and skills, implementing modern web technologies.\\
+\vspace*{2mm}
+
+\end{document}
