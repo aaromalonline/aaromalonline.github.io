@@ -1,0 +1,246 @@
+:root {
+    --bg-color: #0a0a0a;
+    --secondary-bg: #111111;
+    --accent-color: #64ffda;
+    --text-color: #8892b0;
+    --text-bright: #ccd6f6;
+    --border-color: #2d2d2d;
+    --heading-color: #e6f1ff;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+#wrapper > .wrapper {
+    background: var(--bg-color);
+}
+
+#wrapper > .wrapper.style2 {
+    background: var(--secondary-bg);
+}
+
+#sidebar {
+    background: var(--secondary-bg);
+}
+
+#sidebar a {
+    color: var(--text-bright) !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#sidebar a:hover {
+    color: var(--accent-color) !important;
+}
+
+.button {
+    background: transparent !important;
+    border: 1px solid var(--accent-color) !important;
+    color: var(--accent-color) !important;
+    border-radius: 4px !important;
+}
+
+.button:hover {
+    background: rgba(100, 255, 218, 0.1) !important;
+}
+
+.features section {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.features section:hover {
+    border-color: var(--accent-color);
+}
+
+h1, h2, h3 {
+    color: var(--heading-color) !important;
+}
+
+p {
+    color: var(--text-color);
+}
+
+b {
+    color: var(--text-bright);
+}
+
+.split.style1 {
+    margin: 0 !important;
+    padding: 2em !important;
+    background: var(--secondary-bg);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.split.style1 > section {
+    padding: 2em !important;
+    margin: 0 !important;
+    background: var(--secondary-bg);
+}
+
+.icon.solid.major {
+    color: var(--accent-color);
+    background: rgba(100, 255, 218, 0.1);
+}
+
+/* Form elements */
+input[type="text"],
+input[type="email"],
+textarea {
+    background: var(--secondary-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-bright) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 0.9em !important;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 0 0 1px var(--accent-color) !important;
+}
+
+/* Form layout fixes */
+.field {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.field.half {
+    width: 48% !important;  /* Slightly reduced to prevent overflow */
+    margin: 0 1% !important;
+}
+
+.fields {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    margin: -1em 0 2em -1em !important;
+}
+
+.fields > .field {
+    padding: 1em 0 0 1em !important;
+}
+
+/* Spotlights */
+.spotlights > section > .image {
+    border: 1px solid var(--border-color);
+}
+
+.spotlights > section > .content {
+    background: var(--secondary-bg);
+    border: 1px solid var(--border-color);
+}
+
+/* Banner */
+.banner-container img {
+    opacity: 0.7;
+    filter: brightness(0.7);
+}
+
+/* Form submit button */
+.submit {
+    background: transparent !important;
+    border: 1px solid var(--accent-color) !important;
+    color: var(--accent-color) !important;
+    border-radius: 4px !important;
+}
+
+.submit:hover {
+    background: rgba(100, 255, 218, 0.1) !important;
+}
+
+/* Contact section styling */
+#three .inner {
+    padding: 2em !important;
+}
+
+/* Contact list styling */
+ul.contact {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+ul.contact li {
+    margin-bottom: 2em;
+    list-style: none !important;
+}
+
+ul.contact h3 {
+    color: var(--text-color) !important;
+    font-size: 0.9em !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.8em;
+    opacity: 0.8;
+}
+
+ul.contact a {
+    color: var(--text-bright) !important;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+ul.contact a:hover {
+    color: var(--accent-color) !important;
+}
+
+/* Social icons styling */
+ul.icons {
+    margin-top: 1em !important;
+    display: flex;
+    gap: 1em;
+    list-style: none !important;
+}
+
+ul.icons li {
+    list-style: none !important;
+}
+
+ul.icons li a {
+    background: transparent !important;
+    border: 1px solid var(--border-color);
+    opacity: 0.8;
+}
+
+ul.icons li a:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+    opacity: 1;
+}
+
+/* Smooth transitions */
+* {
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease !important;
+}
+
+/* Add this to your head section in HTML */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Copyright link */
+.copyright {
+    text-align: center;
+    padding: 2em 0;
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+.copyright a {
+    color: var(--text-color) !important;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+}
+
+.copyright a:hover {
+    color: var(--accent-color) !important;
+    opacity: 1;
+} 
