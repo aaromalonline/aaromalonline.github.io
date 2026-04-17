@@ -95,6 +95,31 @@ body {
     display: block;
 }
 
+/* Collapsible CV */
+details {
+    margin-top: 2em;
+}
+
+summary {
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    list-style: none; /* Removes default arrow */
+    color: #64a0ff;
+    user-select: none;
+    padding: 0.5em 0;
+    border-bottom: 1px solid #333;
+    margin-bottom: 1.5em;
+}
+
+summary::-webkit-details-marker {
+    display: none; /* Removes arrow in Safari */
+}
+
+summary:hover {
+    color: #fff;
+}
+
 /* Content Typography */
 h1,
 h2,
