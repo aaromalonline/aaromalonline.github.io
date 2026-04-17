@@ -70,14 +70,29 @@ body {
 .tag-light {
     color: #777;
     font-size: 13px;
-    margin-bottom: 1.5em; /* Added margin for gallery separation */
+    margin-bottom: 1.5em;
+    /* Added margin for gallery separation */
     display: block;
+}
+
+.gallery-item {
+    display: inline-block;
+    max-width: 100%;
+    margin-top: 2em;
 }
 
 .gallery-image {
     max-width: 100%;
-    margin-top: 2em;
+    display: block; /* Removes bottom whitespace */
     border: 1px solid #333;
+}
+
+.gallery-item .tag-light {
+    width: 0;
+    min-width: 100%;
+    margin-top: 0.8em;
+    line-height: 1.4;
+    display: block;
 }
 
 /* Content Typography */
