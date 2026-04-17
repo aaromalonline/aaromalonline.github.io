@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecometachip: Eco-Friendly Chemical Identification · Aaromal A.</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <main class="page-content">
+            <span class="tag-light">on technical research (placeholder)</span>
+            <h1>Ecometachip: A Low-Cost, Eco-Friendly Liquid Chemical Identifier</h1>
+            <p class="date">February 2026</p>
+
+            <p>This project introduces a biodegradable electronic system designed for identifying common liquids—water,
+                ethanol, oils—based on variations in their relative permittivity ($\epsilon_r$). The core innovation
+                involves re-engineering Coir-Rubber Composites (CoRC) from simple radio wave absorbers into active
+                dielectric resonators.</p>
+
+            <h2>The Substrate: Re-engineering CoRC</h2>
+            <p>Scanning Electron Microscopy (SEM) reveals that the addition of carbon renders the CoRC matrix (coconut
+                pith fiber and rubber latex) highly porous. While these pores traditionally increase power loss in
+                shields, we leverage this porosity for fluid integration. Capillary action wicks target fluids into the
+                matrix, displacing air and shifting the complex permittivity of the entire material.</p>
+
+            <h2>Hardware Architecture: 100 MHz Hartley Oscillator</h2>
+            <p>The sensor generates a continuous RF magnetic field. The self-resonant frequency of the LC tank is
+                dictated by $f_o \propto 1/\sqrt{LC_{eff}}$. The CoRC patch functions as a dielectrically loaded
+                secondary resonator. When permittivity shifts, it modulates the amplitude of the fluctuating magnetic
+                field, which is captured non-contactivly by a secondary pickup coil.</p>
+
+            <pre><code># Python Drift Calculation snippet
+h_slope, _, _, _, _ = stats.linregress(df['Humidity'], df['Vdc'])
+print(f"Humidity Drift: {h_slope:.2f} mV/%RH")</code></pre>
+
+            <h2>Results & Linearity</h2>
+            <p>Extensive hardware testing verified a sensitivity of **2.31 mV/$\epsilon_r$** with an $R^2$ score of
+                **0.906**. The environmental robustness characterization revealed exceptional stability, with thermal
+                drift constrained to 0.50 mV/°C. The system successfully enables analog classification via an RGB LED
+                thresholding circuit.</p>
+
+            <p>Full research findings presented at <strong>IEEE APSCON 2026</strong> (Student Research Forum).</p>
+
+            <footer id="footer-placeholder"></footer>
+        </main>
+
+        <nav id="sticky-nav-placeholder" class="sticky-nav"></nav>
+        <script src="../index.js"></script>
+    </div>
+</body>
+
+</html>

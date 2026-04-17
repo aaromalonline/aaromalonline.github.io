@@ -66,8 +66,24 @@ body {
     color: #fff;
 }
 
+/* Metadata Tags */
+.tag-light {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 1.5em; /* Added margin for gallery separation */
+    display: block;
+}
+
+.gallery-image {
+    max-width: 100%;
+    margin-top: 2em;
+    border: 1px solid #333;
+}
+
 /* Content Typography */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: 500;
     font-size: 15px;
     margin-top: 1.5em;
@@ -143,14 +159,17 @@ footer {
         margin-right: 0;
         max-width: 100%;
     }
+
     .sticky-nav {
         position: static;
         width: 100%;
         text-align: right;
         margin-bottom: 3em;
     }
+
     .site-wrapper {
-        flex-direction: column-reverse; /* Put nav at top on mobile */
+        flex-direction: column-reverse;
+        /* Put nav at top on mobile */
     }
 }
 

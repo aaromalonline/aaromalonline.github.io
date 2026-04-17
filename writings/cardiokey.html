@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardioKey (ECG-ID): Biometric Identification via Cardiac Signatures · Aaromal A.</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <main class="page-content">
+            <span class="tag-light">on signal processing (placeholder)</span>
+            <h1>CardioKey (ECG-ID): Biometric Identification via Cardiac Signatures</h1>
+            <p class="date">2026</p>
+
+            <p>CardioKey is an analog-to-digital biometric system that identifies individuals using the unique
+                structural variations in their electrocardiogram (ECG) signals. Unlike traditional PPG sensors, ECG
+                captures the underlying electrical conduction of the heart, which serves as a highly robust biometric
+                identifier.</p>
+
+            <h2>Analog Front-End Engineering</h2>
+            <p>The system utilizes an extreme-precision analog front-end built around the <strong>AD620 Instrumentation
+                    Amplifier</strong>. To capture the millivolt-scale cardiac potentials amidst high common-mode noise,
+                we engineered a multi-stage gain block:</p>
+            <ul>
+                <li><strong>Instrumentation Stage:</strong> Precise differential amplification using AD620 with a CMRR >
+                    100 dB.</li>
+                <li><strong>Gain Block:</strong> Provides approximately 1000x total amplification for stable ADC
+                    digitization.</li>
+                <li><strong>Active Filtering:</strong> Integrated bandpass filtering (0.5 Hz to 40 Hz) to eliminate
+                    baseline wander and high-frequency powerline interference.</li>
+            </ul>
+
+            <h2>Signal Processing & Classifier Pipeline</h2>
+            <p>Once digitized, the ECG signals are processed through a dimensionality reduction and classification
+                pipeline. By extracting the P-QRS-T complex and applying <strong>Principal Component Analysis
+                    (PCA)</strong> followed by <strong>Linear Discriminant Analysis (LDA)</strong>, the system achieves
+                a peak identification accuracy of <strong>96%</strong> across evaluated test subjects.</p>
+
+            <p>Source: <a href="https://github.com/aaromalonline/cardiokey">github.com/aaromalonline/cardiokey</a></p>
+
+            <footer id="footer-placeholder"></footer>
+        </main>
+
+        <nav id="sticky-nav-placeholder" class="sticky-nav"></nav>
+        <script src="../index.js"></script>
+    </div>
+</body>
+
+</html>

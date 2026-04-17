@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberate:ATCS - Adaptive Typing & Control System · Aaromal A.</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <main class="page-content">
+            <span class="tag-light">on assistive tech (placeholder)</span>
+            <h1>Liberate:ATCS - Adaptive Typing & Control System</h1>
+            <p class="date">2025</p>
+
+            <p>Liberate:ATCS is an assistive technology project designed for individuals with limited mobility, such as
+                those diagnosed with ALS, muscular dystrophy, or spinal cord injuries. The system translates subtle
+                muscle movements (twitches) into digital control signals.</p>
+
+            <h2>Hardware Modules</h2>
+            <p>The system utilizes a modular sensor architecture to capture input:</p>
+            <ul>
+                <li><strong>Accelerometer-based Module:</strong> Uses an ADXL345 sensor to detect precise muscle tremors
+                    or twitches.</li>
+                <li><strong>IR Sensor Module:</strong> Uses TCRT5000 IR sensors for proximity-based twitch detection,
+                    providing a non-contact alternative.</li>
+                <li><strong>Wireless Control:</strong> Driven by an ESP32 for real-time, wireless data transmission to
+                    the host interface.</li>
+            </ul>
+
+            <h2>Software & Adaptive Interface</h2>
+            <p>The host application, built using <strong>Python and PyQt5</strong>, features an adaptive keyboard
+                interface. It uses a row-column scanning technique where a single high-gain "click" (decoded from the
+                muscle tremor) selects the desired character or macro. This allows for communication without any
+                traditional keyboard or mouse input.</p>
+
+            <p>Project Live: <a href="https://liberate-atcs.vercel.app/">liberate-atcs.vercel.app</a></p>
+            <p>Source: <a
+                    href="https://github.com/aaromalonline/liberate-atcs">github.com/aaromalonline/liberate-atcs</a></p>
+
+            <footer id="footer-placeholder"></footer>
+        </main>
+
+        <nav id="sticky-nav-placeholder" class="sticky-nav"></nav>
+        <script src="../index.js"></script>
+    </div>
+</body>
+
+</html>
