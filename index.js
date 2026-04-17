@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // Detect path depth to handle relative links (e.g., from /writings/)
     // We check if the current path contains "writings/"
     const path = window.location.pathname;
-    const isSubdir = path.includes("/writings/") || path.includes("/cv/") || path.includes("/gallery/");
+    const isSubdir = path.includes("/writings/") || path.includes("/about/") || path.includes("/gallery/");
     const prefix = isSubdir ? "../" : "";
 
     const navHTML = `
-        <h1>Aaromal A.</h1>
+        <h2>Aaromal A.</h2>
         <ul>
-            <li><a href="${prefix}cv/">About</a></li>
+            <li><a href="${prefix}about/">About</a></li>
             <li><a href="${prefix}writings/">Writing</a></li>
             <li><a href="${prefix}people.html">People</a></li>
             <li><a href="${prefix}gallery/">Gallery</a></li>

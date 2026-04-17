@@ -83,7 +83,8 @@ body {
 
 .gallery-image {
     max-width: 100%;
-    display: block; /* Removes bottom whitespace */
+    display: block;
+    /* Removes bottom whitespace */
     border: 1px solid #333;
 }
 
@@ -104,7 +105,8 @@ summary {
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    list-style: none; /* Removes default arrow */
+    list-style: none;
+    /* Removes default arrow */
     color: #64a0ff;
     user-select: none;
     padding: 0.5em 0;
@@ -113,7 +115,8 @@ summary {
 }
 
 summary::-webkit-details-marker {
-    display: none; /* Removes arrow in Safari */
+    display: none;
+    /* Removes arrow in Safari */
 }
 
 summary:hover {
