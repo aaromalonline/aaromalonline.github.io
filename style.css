@@ -1,0 +1,161 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 15px;
+    background-color: #1a1a1a;
+    color: #eee;
+    line-height: 1.4;
+    margin: 0;
+    padding: 3em;
+}
+
+/* Persistent Two-Column Layout */
+.site-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.page-content {
+    flex: 1;
+    max-width: 700px;
+    margin-right: 250px;
+    text-align: left;
+}
+
+.sticky-nav {
+    position: fixed;
+    top: 3em;
+    right: 3em;
+    width: 200px;
+    text-align: right;
+    z-index: 100;
+}
+
+.sticky-nav h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 0.2em;
+}
+
+/* Navigation Link Specifically Tightened Spacing */
+.sticky-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sticky-nav li {
+    margin-bottom: 0;
+    line-height: 1.1;
+}
+
+.sticky-nav a {
+    color: #64a0ff;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+.sticky-nav a:visited {
+    color: #9988ee;
+}
+
+.sticky-nav a:hover {
+    color: #fff;
+}
+
+/* Content Typography */
+h1, h2, h3 {
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #fff;
+}
+
+h1 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+/* Page content lists */
+.page-content ul {
+    margin-bottom: 1em;
+}
+
+.page-content li {
+    margin-bottom: 0.4em;
+    line-height: 1.4;
+}
+
+/* CV/Content specifics */
+.breadcrumb {
+    font-size: 14px;
+    margin-bottom: 2em;
+    color: #888;
+}
+
+.section-header {
+    border-bottom: 1px solid #333;
+    padding-bottom: 4px;
+    margin-top: 2em;
+    font-weight: bold;
+}
+
+.cv-item {
+    margin-bottom: 2em;
+}
+
+.cv-item-head {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #fff;
+}
+
+.date {
+    font-weight: normal;
+    color: #999;
+}
+
+.cv-list {
+    list-style-type: disc;
+    padding-left: 1.2em;
+}
+
+footer {
+    margin-top: 5em;
+    font-size: 13px;
+    color: #555;
+    text-align: left;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1000px) {
+    .page-content {
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .sticky-nav {
+        position: static;
+        width: 100%;
+        text-align: right;
+        margin-bottom: 3em;
+    }
+    .site-wrapper {
+        flex-direction: column-reverse; /* Put nav at top on mobile */
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 1.5em;
+    }
+}

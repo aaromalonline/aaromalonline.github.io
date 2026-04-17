@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Deep Generative Models · Aaromal A.</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="site-wrapper">
+        <main class="page-content">
+            <h1>Understanding Deep Generative Models</h1>
+            <p><i>November 2025</i></p>
+
+            <p>Deep Generative Models can learn the underlying spatial boundaries of massive, unstructured datasets.</p>
+            
+            <h3>Generative Adversarial Networks</h3>
+            <p>A game-theoretic setup where a Generator $G$ tries to fool a Discriminator $D$. The Minimax objective:</p>
+            <pre><code>def gan_loss(D_real, D_fake):
+    real_loss = -torch.mean(torch.log(D_real))
+    fake_loss = -torch.mean(torch.log(1 - D_fake))
+    return real_loss + fake_loss</code></pre>
+
+            <h3>Score-Based Diffusion</h3>
+            <p>Instead of explicit latent maps, we incrementally perturb the source mapping with Gaussian noise.</p>
+
+            <footer>
+                &copy; 2026 Aaromal A.
+            </footer>
+        </main>
+
+        <nav class="sticky-nav">
+            <h1>Aaromal A.</h1>
+            <ul>
+                <li><a href="../cv.html">About</a></li>
+                <li><a href="../writings/">Writing</a></li>
+                <li><a href="../people.html">People</a></li>
+                <li><a href="../links.html">Links</a></li>
+                <li><a href="https://github.com/aaromalonline">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/aaromalonline/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
